@@ -1,11 +1,10 @@
-import './App.css'
-
-function App() { const [count, setCount] = useState(0)
+import Home from "./pages/Home"
+function App() { 
 
   return (
-    <>
-
-    </>
+   <>
+   <Home/>
+   </>
   )
 }
 
