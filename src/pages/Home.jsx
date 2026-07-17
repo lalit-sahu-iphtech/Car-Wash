@@ -9,6 +9,8 @@ import QualitySection from "../components/QualityService/QualitySection";
 import TestimonialsSection from "../components/testimonials/TestimonialsSection";
 import FooterSection from "../components/Footer/FooterSection";
 import MapSection from "../components/Map/MapSection";
+import CtaSection from "../components/cta/CtaSection";
+import FaqSection from "../components/faq/FaqSection";
 
 
 export default function Home(){
@@ -23,7 +25,8 @@ export default function Home(){
         <PortfolioSection/>
         <QualitySection/>
         <TestimonialsSection/>
-
+         <CtaSection/>
+         <FaqSection/>
         <MapSection/>
         <FooterSection/>
         </>
