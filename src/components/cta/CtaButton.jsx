@@ -10,10 +10,23 @@ export default function CtaButton({text}){
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.96 }}
         className="
-          bg-white text-[#3561d8] font-bold uppercase text-[13px]
-          tracking-wide px-8 py-4 rounded-[10px] shadow-md
-          shrink-0
-        "
+        bg-white
+        font-bold
+        uppercase
+        text-[13px]
+        tracking-wide
+        px-8
+        py-4
+        rounded-[10px]
+        shadow-md
+        shrink-0
+        border-1
+        border-transparent
+        hover:bg-[#3561d8]
+        hover:border-white
+        hover:text-white
+       
+      "
       >
         {text}
       </motion.button>

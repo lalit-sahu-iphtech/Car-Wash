@@ -22,7 +22,7 @@ export default function QualityChecklist() {
         variants={listVariants}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.5 }}
         className="space-y-1 sm:space-y-0"
       >
         {qualityBottom.features.map((item, index) => (
@@ -40,7 +40,7 @@ export default function QualityChecklist() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.5 }}
         transition={{ duration: 0.5, delay: 0.65 }}
       >
         <QualityButton>LEARN MORE</QualityButton>

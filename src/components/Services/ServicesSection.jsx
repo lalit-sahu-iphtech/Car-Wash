@@ -28,7 +28,8 @@ export default function ServicesSection() {
           }}
           viewport={{
             once: false,
-            amount: 0.2,
+            amount: 0.35,
+            margin: "-120px 0px -120px 0px",
           }}
           transition={{
             duration: 0.55,

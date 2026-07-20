@@ -1,17 +1,48 @@
+import { motion } from "framer-motion";
 import QualityText from "./QualityText";
 import QualityImageStack from "./QualityImageStack";
 import QualityChecklist from "./QualityChecklist";
 
 export default function QualitySection() {
   return (
-    <section className="bg-white py-16 lg:py-24 overflow-hidden">
-      <div className="max-w-[1140px] mx-auto px-5">
+    <section className="relative overflow-hidden py-16 lg:py-24">
+      {/* Base Background */}
+      <div className="absolute inset-0 bg-[#eeeeee]" />
+
+      {/* White Background Reveal */}
+      <motion.div
+          initial={{
+            y: "100%",
+            clipPath:
+              "polygon(8% 0%, 92% 0%, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0% 92%, 0% 8%)",
+          }}
+          whileInView={{
+            y: 0,
+            clipPath:
+              "polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 0%)",
+          }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 1.2,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          className="
+            absolute
+            top-0
+            left-0
+            w-full
+            h-[60%]
+            bg-white
+            z-0
+          "
+        />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-[1140px] mx-auto px-5">
         <div className="grid lg:grid-cols-[340px_380px_1fr] gap-10 lg:gap-12 items-start">
           <QualityText />
 
-          {/* Mobile: shared box so image + checklist align perfectly.
-              Desktop: display:contents makes this wrapper disappear,
-              restoring the 3-column grid. */}
+          {/* Mobile wrapper */}
           <div className="w-full max-w-[400px] mx-auto lg:contents">
             <QualityImageStack />
             <QualityChecklist />

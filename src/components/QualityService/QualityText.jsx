@@ -7,7 +7,7 @@ export default function QualityText() {
     <motion.div
       initial={{ opacity: 0, x: -60 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: false, amount: 0.5 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="max-w-[340px]"
     >

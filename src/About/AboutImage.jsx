@@ -28,7 +28,20 @@ export default function AboutImage() {
       <img
         src={aboutImg}
         alt="Professional car wash technician"
-        className="rounded-2xl w-full max-w-[420px] h-[340px] sm:h-[420px] lg:max-w-[440px] lg:h-[580px] object-cover shadow-sm"
+        className="
+        rounded-2xl
+        w-full
+        max-w-[320px]
+        h-[400px]
+        sm:max-w-[420px]
+        sm:h-[550px]
+        lg:max-w-[440px]
+        lg:h-[580px]
+        object-cover
+        object-top
+        sm:object-center
+        shadow-sm
+      "
       />
     </motion.div>
   );
