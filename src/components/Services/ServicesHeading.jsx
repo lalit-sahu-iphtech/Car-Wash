@@ -13,11 +13,11 @@ export default function ServicesHeading() {
       }}
       viewport={{
         once: false,
-        amount: 0.35,
+        amount: 0.5,
         margin: "-120px 0px -120px 0px",
       }}
       transition={{
-        duration: 0.55,
+        duration: 0.8,
         ease: "easeOut",
       }}
       className="text-center"

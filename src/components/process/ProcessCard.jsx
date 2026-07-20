@@ -10,7 +10,7 @@ export default function ProcessCard({
     <motion.div
     initial={{
       opacity: 0,
-      y: 180,
+      y:180,
     }}
     whileInView={{
       opacity: 1,
@@ -18,12 +18,30 @@ export default function ProcessCard({
     }}
     viewport={{
       once: false,
-      amount: 0.15,
+      amount: 0.7,
+      margin: "20px 0px",
     }}
     transition={{
-      duration: 0.5,
-      ease: "easeOut",
+      duration: 0.8,
+      ease: "easeInOut",
     }}
+    // <motion.div
+    // initial={{
+    //   opacity: 0,
+    //   y: 180,
+    // }}
+    // whileInView={{
+    //   opacity: 1,
+    //   y: 0,
+    // }}
+    // viewport={{
+    //   once: false,
+    //   amount: 0.15,
+    // }}
+    // transition={{
+    //   duration: 0.5,
+    //   ease: "easeOut",
+    // }}
     className="text-center group px-3"
     >
       <div
