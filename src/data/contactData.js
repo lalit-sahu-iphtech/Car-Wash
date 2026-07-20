@@ -33,7 +33,7 @@ export const contactInfo = [
   },
   {
     id: 3,
-    icon: Clock,
+    icon: Clock3,
     title: "HOURS",
     text1: "Mon – Fri …… 11 am – 8 pm, Sat,",
     text2: "Sun …… 6 am – 8 pm",
