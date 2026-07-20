@@ -11,6 +11,8 @@ import FooterSection from "../components/Footer/FooterSection";
 import MapSection from "../components/Map/MapSection";
 import CtaSection from "../components/cta/CtaSection";
 import FaqSection from "../components/faq/FaqSection";
+import TeamSection from "../components/Team/TeamSection";
+import ContactSection from "../components/Contact/ContactSection";
 
 
 export default function Home(){
@@ -27,6 +29,8 @@ export default function Home(){
         <TestimonialsSection/>
          <CtaSection/>
          <FaqSection/>
+         <TeamSection/>
+         <ContactSection/>
         <MapSection/>
         <FooterSection/>
         </>
