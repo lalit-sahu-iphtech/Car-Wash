@@ -11,20 +11,19 @@ export default function ServicesCard({
     <motion.div
       initial={{
         opacity: 0,
-        y: 180,
       }}
       whileInView={{
         opacity: 1,
-        y: 0,
+        y: 10,
       }}
       viewport={{
         once: false,
-        amount: 0.35,
-        margin: "-120px 0px -120px 0px",
+        amount: 0.7,
+        margin: "20px 0px",
       }}
       transition={{
-        duration: 0.55,
-        ease: "easeOut",
+        duration: 0.8,
+        ease: "easeInOut",
       }}
       className="
         bg-white
