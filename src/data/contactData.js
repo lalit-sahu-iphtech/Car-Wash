@@ -17,25 +17,26 @@ export const contactData = {
 export const contactInfo = [
   {
     id: 1,
-    icon: Phone,
+    icon: Phone, // apna existing icon import
     title: "CALL US",
     text1: "8-800-10-500,",
     text2: "8-800-10-500",
+    stacked: true, // extra gap wale do lines
   },
-
   {
     id: 2,
     icon: MapPin,
     title: "LOCATION",
-    text1: "121 Rock Street, 21 Avenue,",
-    text2: "New York, NY 92103-9000",
+    text1: "121 Rock Street, 21 Avenue, New York,",
+    text2: "NY 92103-9000",
+    stacked: false, // natural wrap, ek hi paragraph
   },
-
   {
     id: 3,
-    icon: Clock3,
+    icon: Clock,
     title: "HOURS",
-    text1: "Mon – Fri ...... 11 am – 8 pm",
-    text2: "Sat, Sun ...... 6 am – 8 pm",
+    text1: "Mon – Fri …… 11 am – 8 pm, Sat,",
+    text2: "Sun …… 6 am – 8 pm",
+    stacked: false, // natural wrap
   },
 ];

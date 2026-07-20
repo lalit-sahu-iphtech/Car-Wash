@@ -5,7 +5,7 @@ import ContactCard from "./ContactCard";
 const containerVariants = {
   hidden: {},
   show: {
-    transition: { staggerChildren: 0 }, // no stagger — sab ek saath
+    transition: { staggerChildren: 0 },
   },
 };
 
@@ -20,12 +20,19 @@ export default function ContactInfo() {
         mt-12
         sm:mt-14
         lg:mt-20
+
         grid
         grid-cols-1
         md:grid-cols-2
         lg:grid-cols-3
+
         gap-5
         lg:gap-8
+
+        max-w-[340px]
+        sm:max-w-none
+        mx-auto
+        sm:mx-0
       "
     >
       {contactInfo.map((item) => (
@@ -35,6 +42,7 @@ export default function ContactInfo() {
           title={item.title}
           text1={item.text1}
           text2={item.text2}
+          stacked={item.stacked}
         />
       ))}
     </motion.div>
