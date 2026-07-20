@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion} from "framer-motion";
 import LearnMoreButton from "./LearnMoreButton";
 
 export default function ServicesCard({
@@ -19,7 +19,8 @@ export default function ServicesCard({
       }}
       viewport={{
         once: false,
-        amount: 0.15,
+        amount: 0.35,
+        margin: "-120px 0px -120px 0px",
       }}
       transition={{
         duration: 0.55,
