@@ -23,7 +23,8 @@ export default function MobileMenu() {
     <>
       {/* Menu Button */}
       <button
-        className="lg:hidden text-3xl"
+         className="min-[940px]:hidden text-2xl mr-9 text-gray-600"
+
         onClick={() => setMenuOpen(true)}
       >
         <FaBars />
@@ -79,14 +80,16 @@ export default function MobileMenu() {
                 }`}
               >
                 <div className="border border-gray-500">
-                  {pageLinks.map((item) => (
-                    <div
-                      key={item}
-                      className="px-5 py-3 text-xl hover:bg-white hover:text-black transition cursor-pointer"
-                    >
-                      {item}
-                    </div>
-                  ))}
+                {pageLinks.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.link}
+                    onClick={() => setMenuOpen(false)}
+                    className="block px-5 py-3 text-xl hover:bg-white hover:text-black transition"
+                  >
+                    {item.name}
+                  </a>
+                ))}
                 </div>
               </div>
             </li>

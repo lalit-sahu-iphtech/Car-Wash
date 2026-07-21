@@ -14,7 +14,7 @@ export default function ServicesHeading() {
       viewport={{
         once: false,
         amount: 0.5,
-        margin: "-120px 0px -120px 0px",
+        // margin: "-120px 0px -120px 0px",
       }}
       transition={{
         duration: 0.8,

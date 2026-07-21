@@ -70,7 +70,7 @@ export default function PortfolioSlider() {
   };
 
   return (
-    <div className="relative mt-16">
+    <div className="relative mt-10 lg:mt-12">
 
       {/* ==================== DESKTOP ==================== */}
 

@@ -8,8 +8,8 @@ export default function PortfolioCard({ image }) {
           cursor-pointer
           w-full
           h-[430px]
-          sm:h-[460px]
-          lg:h-[480px]
+          sm:h-[400px]
+          lg:h-[400px]
         "
       >
         <img
@@ -21,7 +21,7 @@ export default function PortfolioCard({ image }) {
             object-cover
             transition-transform
             duration-500
-            group-hover:scale-110
+           
           "
         />
       </div>

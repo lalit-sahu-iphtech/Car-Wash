@@ -19,18 +19,18 @@ export default function Home(){
     return(
         <>
         <Navbar/>
-        <Hero/>
+        <Hero id="home"/>
         <FeatureSection/>
-        <AboutSection/>
+        <AboutSection id="about"/>
         <ProcessSection/>
-        <ServicesSection/>
+        <ServicesSection id="services"/>
         <PortfolioSection/>
         <QualitySection/>
         <TestimonialsSection/>
          <CtaSection/>
-         <FaqSection/>
-         <TeamSection/>
-         <ContactSection/>
+         <FaqSection id="faq"/>
+         <TeamSection id="team"/>
+         <ContactSection id="contact"/>
         <MapSection/>
         <FooterSection/>
         </>

@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 
 export default function PortfolioHeading() {
   return (
-    <div className="text-center max-w-[900px] mx-auto">
+    <div className="max-w-[1140px] mx-auto">
+
       {/* Heading */}
       <motion.h2
         initial={{
@@ -16,6 +17,7 @@ export default function PortfolioHeading() {
         viewport={{
           once: false,
           amount: 0.3,
+          margin: "0px 0px -120px 0px",
         }}
         transition={{
           duration: 0.7,
@@ -23,10 +25,10 @@ export default function PortfolioHeading() {
         }}
         className="
           text-white
-          font-bold
           text-[40px]
           sm:text-[52px]
           lg:text-[64px]
+          font-bold
           leading-[1.1]
         "
       >
@@ -46,27 +48,28 @@ export default function PortfolioHeading() {
         viewport={{
           once: false,
           amount: 0.3,
+          margin: "0px 0px -120px 0px",
         }}
         transition={{
           duration: 0.7,
-          delay: 0.2,
+          delay: 0.15,
         }}
         style={{
-          transformOrigin: "center",
+          transformOrigin: "left",
         }}
         className="
-          mt-7
-          text-white/90
+          mt-6
+          text-white/80
           text-[16px]
-          leading-8
-          max-w-[760px]
-          mx-auto
-          px-4
+          leading-5
+          max-w-none
+          whitespace-nowrap
         "
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
       </motion.p>
+
     </div>
   );
 }

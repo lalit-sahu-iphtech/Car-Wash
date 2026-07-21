@@ -3,7 +3,7 @@ import TeamGrid from "./TeamGrid";
 
 export default function TeamSection() {
   return (
-    <section
+    <section id="team"
       className="
         bg-[#ffffff]
         py-15

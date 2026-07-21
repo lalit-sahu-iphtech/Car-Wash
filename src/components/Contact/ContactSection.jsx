@@ -6,6 +6,7 @@ import ContactInfo from "./ContactInfo";
 export default function ContactSection() {
   return (
     <section
+     id="contact"
       className="
         bg-white
         py-16
