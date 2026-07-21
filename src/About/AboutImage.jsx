@@ -17,26 +17,27 @@ export default function AboutImage() {
       }}
       viewport={{
         once: false,
-        amount: 0.1,
+        amount: 0.4,
+        margin: "0px 0px -90px 0px",
       }}
       transition={{
         duration: 1,
         ease: "easeOut",
       }}
-      className="flex justify-center lg:justify-end w-full max-w-full"
+      className="flex justify-center lg:justify-end w-full max-w-full lg:-translate-x-10 "
     >
       <img
         src={aboutImg}
         alt="Professional car wash technician"
         className="
-        rounded-2xl
+        rounded-3xl
         w-full
         max-w-[320px]
-        h-[400px]
+        h-[500px]
         sm:max-w-[420px]
-        sm:h-[550px]
-        lg:max-w-[440px]
-        lg:h-[580px]
+        sm:h-[500px]
+        lg:max-w-[450px]
+        lg:h-[670px]
         object-cover
         object-top
         sm:object-center

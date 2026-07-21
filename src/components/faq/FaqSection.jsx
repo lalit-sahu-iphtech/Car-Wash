@@ -5,7 +5,7 @@ import FaqList from "./FaqList";
 
 export default function FaqSection() {
   return (
-    <section className="bg-white py-14 lg:py-20 overflow-hidden">
+    <section id="faq"className="bg-white py-14 lg:py-20 overflow-hidden">
       <div className="max-w-[1140px] mx-auto px-5">
         <FaqHeading
           heading={faqContent.heading}

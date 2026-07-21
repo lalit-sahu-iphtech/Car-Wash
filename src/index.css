@@ -3,5 +3,8 @@
 @import "tailwindcss";
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans","Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }

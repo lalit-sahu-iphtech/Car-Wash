@@ -4,14 +4,28 @@ import { featureData } from "../../data/featureData";
 import useInView from "../../hooks/useInView";
 
 export default function FeatureSection() {
-  const [ref, visible] = useInView(0.55);
+  const [ref, visible] = useInView(
+    window.innerWidth < 768 ? 0.2 : 0.55,
+    "0px 0px -140px 0px"
+  );
 
   return (
     <section
       ref={ref}
-      className="bg-[#3f66d6] py-28 overflow-hidden"
+      className="
+      relative
+      z-30
+    
+      sm:-mt-6
+      md:-mt-10
+      lg:-mt-[68px]
+    
+      bg-[#2e61d4]
+      py-18
+      overflow-hidden
+    "
     >
-      <div className="max-w-[1140px] mx-auto grid lg:grid-cols-4 gap-14">
+      <div className="max-w-[1140px] mx-auto grid lg:grid-cols-4 gap-5">
         {featureData.map((item, index) => (
           <FeatureCard
             key={item.id}

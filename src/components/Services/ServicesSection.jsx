@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import ServicesHeading from "./ServicesHeading";
 import ServicesCard from "./ServicesCard";
 import { servicesData } from "../../data/servicesData";
@@ -8,33 +7,14 @@ export default function ServicesSection() {
   const secondRow = servicesData.slice(3);
 
   return (
-    <section className="bg-[#f5f5f5] py-16 md:py-24 lg:py-28 overflow-hidden">
+    <section id="services" className="bg-[#f5f5f5] py-16 md:py-24 lg:py-28 overflow-hidden">
       <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-0">
 
         {/* Heading */}
-
         <ServicesHeading />
 
         {/* First Row */}
-
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 180,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: false,
-            amount: 0.35,
-            margin: "-120px 0px -120px 0px",
-          }}
-          transition={{
-            duration: 0.55,
-            ease: "easeOut",
-          }}
+        <div
           className="
             grid
             grid-cols-1
@@ -50,27 +30,10 @@ export default function ServicesSection() {
               {...item}
             />
           ))}
-        </motion.div>
+        </div>
 
         {/* Second Row */}
-
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 180,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: false,
-            amount: 0.2,
-          }}
-          transition={{
-            duration: 0.55,
-            ease: "easeOut",
-          }}
+        <div
           className="
             grid
             grid-cols-1
@@ -86,7 +49,7 @@ export default function ServicesSection() {
               {...item}
             />
           ))}
-        </motion.div>
+        </div>
 
       </div>
     </section>

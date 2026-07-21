@@ -1,4 +1,4 @@
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import LearnMoreButton from "./LearnMoreButton";
 
 export default function ServicesCard({
@@ -11,19 +11,20 @@ export default function ServicesCard({
     <motion.div
       initial={{
         opacity: 0,
+        y: 80,
       }}
       whileInView={{
         opacity: 1,
-        y: 10,
+        y: 0,
       }}
       viewport={{
-        once: false,
-        amount: 0.7,
-        margin: "20px 0px",
+        once: true,
+        amount: 0.35,
+        margin: "0px 0px -120px 0px",
       }}
       transition={{
         duration: 0.8,
-        ease: "easeInOut",
+        ease: [0.22, 1, 0.36, 1],
       }}
       className="
         bg-white
@@ -32,13 +33,11 @@ export default function ServicesCard({
         shadow-sm
         transition-all
         duration-300
-        hover:-translate-y-2
-        hover:shadow-2xl
+        
         group
       "
     >
       {/* Image */}
-
       <div className="overflow-hidden">
         <img
           src={image}
@@ -51,29 +50,23 @@ export default function ServicesCard({
             object-cover
             transition-transform
             duration-500
-            group-hover:scale-[1.05]
+           
           "
         />
       </div>
 
       {/* Content */}
-
       <div className="flex flex-col items-center text-center pb-8">
 
         {/* Title */}
-
         <h3
           className="
             mt-[21px]
             mx-[21px]
-
             text-[#111]
-
             text-[15px]
             md:text-[16px]
-
             leading-7
-
             font-bold
             uppercase
           "
@@ -82,19 +75,14 @@ export default function ServicesCard({
         </h3>
 
         {/* Price */}
-
         <h4
           className="
             mt-5
             mx-[21px]
-
             text-[#3561d8]
-
             text-[40px]
             md:text-[46px]
-
             leading-none
-
             font-bold
           "
         >
@@ -102,16 +90,12 @@ export default function ServicesCard({
         </h4>
 
         {/* Description */}
-
         <p
           className="
             mt-[21px]
             mx-[21px]
-
             text-[#555]
-
             text-[16px]
-
             leading-[1.8]
           "
         >
@@ -119,7 +103,6 @@ export default function ServicesCard({
         </p>
 
         {/* Button */}
-
         <div className="mt-6">
           <LearnMoreButton />
         </div>

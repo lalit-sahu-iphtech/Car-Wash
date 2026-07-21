@@ -13,34 +13,35 @@ export default function HeroCard() {
         ease: [0.22, 1, 0.36, 1],
       }}
       className="
-      w-full
-      max-w-[340px]
-      sm:max-w-[380px]
-      md:max-w-[420px]
-      lg:max-w-[470px]
-      xl:max-w-[500px]
-      h-auto
-      lg:min-h-[520px]
-      bg-white
-      rounded-[30px]
-      p-6
-      sm:p-8
-      lg:p-10
-      shadow-xl
-    "
+        w-full
+        max-w-[340px]
+        sm:max-w-[380px]
+        md:max-w-[420px]
+        lg:max-w-[460px]
+        xl:max-w-[500px]
+
+        bg-white
+        rounded-[30px]
+        lg:mt-22
+        p-5
+        sm:p-5
+        lg:p-7
+
+        shadow-xl
+        "
     >
       {/* Welcome */}
-      <p className="text-[16px] sm:text-[18px] lg:text-[20px] tracking-[4px] uppercase text-[#111111] mb-4 lg:mb-5">
+      <p className="text-[16px] sm:text-[16px] lg:text-[18px] tracking-[4px] uppercase text-[#111111] mb-4 lg:mb-5">
         Welcome To
       </p>
 
       {/* Heading */}
-      <h1 className="text-[42px] sm:text-[56px] lg:text-[72px] leading-none font-bold text-[#111111] mb-6 lg:mb-8">
+      <h1 className="text-[32px] sm:text-[48px] lg:text-[72px] leading-none font-bold mb-4 lg:mb-6">
         Car Wash
       </h1>
 
       {/* Address */}
-      <div className="space-y-4 lg:space-y-5">
+      <div className="space-y-3 lg:space-y-5">
         <div className="flex items-center gap-3">
           <FaMapMarkerAlt className="text-[18px] lg:text-[22px] shrink-0" />
           <span className="text-[15px] sm:text-[16px] lg:text-[18px] leading-6 tracking-[1px]">
@@ -73,26 +74,26 @@ export default function HeroCard() {
       {/* Button */}
       <button
   className="
-    mt-8
+    mt-6
     lg:mt-10
-    w-[170px]
-    sm:w-[180px]
-    h-[54px]
+
+    w-full
+    max-w-[180px]
+
+    h-[52px]
     lg:h-[60px]
+
     rounded-xl
-    bg-[#4f7cff]
-    border-2
-    border-[#4f7cff]
+    bg-[#2e61d4]
     text-white
-    text-[13px]
     font-bold
     uppercase
-    tracking-[1px]
     transition-all
     duration-300
     hover:bg-white
     hover:text-black
-    hover:border-[#4f7cff]
+    border-2
+    border-[#2e61d4]
   "
 >
   Book Now
