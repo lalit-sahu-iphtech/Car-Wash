@@ -1,23 +1,23 @@
 export const pageLinks = [
   {
     name: "About",
-    link: "/#about",
+    link: "/about",
   },
   {
     name: "Our Team",
-    link: "/#team",
+    link: "/team",
   },
   {
     name: "FAQ",
-    link: "/#faq",
+    link: "/faq",
   },
   {
     name: "Pricing",
-    link: "#pricing",
+    link: "pricing",
   },
   {
     name: "Services",
-    link: "/#services",
+    link: "/services",
   },
   // {
   //   name: "Portfolio",
