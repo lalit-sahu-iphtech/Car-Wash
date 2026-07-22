@@ -18,21 +18,22 @@ import ContactSection from "../components/Contact/ContactSection";
 export default function Home(){
     return(
         <>
-        <Navbar/>
-        <Hero id="home"/>
-        <FeatureSection/>
-        <AboutSection id="about"/>
-        <ProcessSection/>
-        <ServicesSection id="services"/>
-        <PortfolioSection/>
-        <QualitySection/>
-        <TestimonialsSection/>
-         <CtaSection/>
-         <FaqSection id="faq"/>
-         <TeamSection id="team"/>
-         <ContactSection id="contact"/>
-        <MapSection/>
-        <FooterSection/>
-        </>
+        <Navbar />
+      
+        <Hero />
+        <FeatureSection />
+        <AboutSection />
+        <ProcessSection />
+        <ServicesSection />
+        <PortfolioSection />
+        <QualitySection />
+        <TestimonialsSection />
+        <CtaSection />
+        <FaqSection />
+        <TeamSection />
+        <ContactSection />
+        <MapSection />
+        <FooterSection />
+      </>
     )
 }

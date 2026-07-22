@@ -3,7 +3,7 @@ import heroImg from "../../assets/images/hero.jpg";
 
 export default function Hero() {
   return (
-    <section
+    <section id="home"
     className="
       relative
       h-[560px]

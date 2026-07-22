@@ -1,15 +1,15 @@
 export const pageLinks = [
   {
     name: "About",
-    link: "#about",
+    link: "/#about",
   },
   {
     name: "Our Team",
-    link: "#team",
+    link: "/#team",
   },
   {
     name: "FAQ",
-    link: "#faq",
+    link: "/#faq",
   },
   {
     name: "Pricing",
@@ -17,6 +17,16 @@ export const pageLinks = [
   },
   {
     name: "Services",
-    link: "#services",
+    link: "/#services",
   },
+  // {
+  //   name: "Portfolio",
+  //   link: "#portfolio",
+  // },
+  // {
+  //   name: "Testimonials",
+  //   link: "#testimonials",
+  // },
+ 
+ 
 ];

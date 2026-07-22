@@ -2,28 +2,16 @@ import ProcessHeading from "./ProcessHeading";
 import ProcessCard from "./ProcessCard";
 import { processData } from "../../data/processData";
 
-import processBg from "../../assets/process-bg.jpg";
+
 
 export default function ProcessSection() {
   return (
-    <section id="process"className="relative overflow-hidden">
+    <section id="process"className="relative overflow-hidden ">
       {/* Background */}
-      <img
-        src={processBg}
-        alt=""
-        className="
-          absolute
-          inset-0
-          w-full
-          h-full
-          object-cover
-          scale-110
-          md:scale-100
-        "
-      />
+     
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/55" />
+      <div className="absolute inset-0  bg-[#2e61d4]" />
 
       {/* Content */}
       <div
@@ -38,7 +26,7 @@ export default function ProcessSection() {
         lg:py-32
       "
       >
-        <ProcessHeading />
+        <ProcessHeading/>
 
         <div
           className="

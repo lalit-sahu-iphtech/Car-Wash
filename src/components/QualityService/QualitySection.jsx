@@ -15,7 +15,7 @@ export default function QualitySection() {
 
   return (
     <section
-      
+      id="quality"
       className="relative overflow-hidden py-16 lg:py-24"
     >
       {/* Base Background */}

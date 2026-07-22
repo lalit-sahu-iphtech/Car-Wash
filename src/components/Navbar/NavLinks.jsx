@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import DropdownMenu from "./DropdownMenu";
-
+import { Link } from "react-router-dom";
 export default function NavLinks() {
   const [open, setOpen] = useState(false);
 
@@ -9,15 +9,15 @@ export default function NavLinks() {
     <ul className="hidden min-[940px]:flex items-center h-full ">
       {/* Home */}
       <li className="h-full -ml-[30px]">
-        <a
-          href="#home"
+        <Link
+          to="/home"
           className=" h-full flex  items-center px-6 text-[16px] font-normal text-[#111111]"
         >
           <span   className="border-b-2 border-transparent py-[10px] px-[20px] transition-all duration-200 hover:bg-[#eeeeee] hover:border-[#4f7cff]"
 >
             Home
           </span>
-        </a>
+        </Link>
       </li>
 
       {/* Pages */}
@@ -49,14 +49,14 @@ export default function NavLinks() {
 
       {/* Contact */}
       <li className="h-full -ml-[50px]">
-        <a
-          href="#contact"
+        <Link 
+          to="/contact"
           className=" flex h-full items-center px-6 text-[16px] font-normal text-[#111111]"
         >
           <span className="border-b-2 border-transparent py-[10px] px-[20px] transition-all duration-200 hover:bg-[#eeeeee] hover:border-[#4f7cff]">
             Contact Us
           </span>
-        </a>
+        </Link>
       </li>
     </ul>
   );

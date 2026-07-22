@@ -16,9 +16,10 @@ export default function HeroCard() {
         w-full
         max-w-[340px]
         sm:max-w-[380px]
-        md:max-w-[420px]
-        lg:max-w-[460px]
-        xl:max-w-[500px]
+        md:max-w-[400px]
+        lg:max-w-[420px]
+        xl:max-w-[440px]
+        2xl:max-w-[460px]
 
         bg-white
         rounded-[30px]

@@ -5,7 +5,7 @@ import FooterBottom from "./FooterBottom";
 
 export default function FooterSection() {
   return (
-    <footer
+    <footer id="footer"
       className="
         bg-[#3f66d6]
         pt-20

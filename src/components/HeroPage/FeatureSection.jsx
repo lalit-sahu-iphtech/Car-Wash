@@ -15,13 +15,13 @@ export default function FeatureSection() {
       ref={ref}
       className="
       relative
-      z-30
+      
     
-      sm:-mt-6
-      md:-mt-10
-      lg:-mt-[68px]
+      sm:mt-6
+      md:mt-10
+      lg:mt-[80px]
     
-      bg-[#2e61d4]
+    
       py-18
       overflow-hidden
     "

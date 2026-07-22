@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { pageLinks } from "../../data/navLinks";
+import { Link } from "react-router-dom";
 
 export default function DropdownMenu({ open }) {
   return (
@@ -26,13 +27,13 @@ export default function DropdownMenu({ open }) {
 
         >
          {pageLinks.map((item) => (
-  <a
+  <Link
     key={item.name}
-    href={item.link}
+    to={item.link}
     className="block px-5 py-3 text-[18px] text-[#111111] transition-all duration-200 hover:bg-[#eeeeee]"
   >
     {item.name}
-  </a>
+  </Link>
 ))}
         </motion.div>
       )}
