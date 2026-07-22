@@ -11,7 +11,7 @@ export default function Services() {
   return (
     <>
       <Navbar />
-      {/* <ServicesBanner/> */}
+      <ServicesBanner/>
        
       <ServicesSection/>
 
