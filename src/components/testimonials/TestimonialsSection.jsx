@@ -20,6 +20,7 @@ export default function TestimonialsSection() {
             font-normal sm:font-bold
             text-center
             mb-10 sm:mb-16 lg:mb-20
+           
           "
         >
           Testimonials
