@@ -4,7 +4,7 @@ import CtaButton from "./CtaButton";
 
 export default function CtaSection() {
   return (
-    <section className="bg-[#3561d8] py-14 lg:py-16 overflow-hidden">
+    <section id="cta"className="bg-[#3561d8] py-14 lg:py-16 overflow-hidden">
       <div
         className="
           max-w-[1140px] mx-auto px-5 sm : px-24 lg:px-40

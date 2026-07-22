@@ -4,7 +4,7 @@ import TestimonialRow from "./TestimonialRow";
 
 export default function TestimonialsSection() {
   return (
-    <section className="bg-[#eeeeee] py-14 sm:py-20 lg:py-28 overflow-hidden">
+    <section id="testimonials" className="bg-[#eeeeee] py-14 sm:py-20 lg:py-28 overflow-hidden">
       <div className="max-w-[1140px] mx-auto px-5">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
