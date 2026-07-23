@@ -6,6 +6,8 @@ import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Team from "./pages/Team";
 import Faq from "./pages/Faq";
+import Pricing from "./pages/Pricing";
+
 import Services from "./pages/Services";
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />
         <Route path="/faq" element={<Faq/>} />
+        <Route path="/pricing" element={<Pricing/>} />
+
         <Route path="/services" element={<Services />} />
 
 

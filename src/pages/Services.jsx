@@ -7,12 +7,14 @@ import PortfolioSection from "../components/Portfolio/PortfolioSection";
 import ServicesSection from "../components/HeroPage/ServicesSection";
 import ProcessSection from "../components/HeroPage/ProcessSection";
 import ServicesBanner from "../components/ServicesPage/ServicesBanner"
+import FeatureCard from "../components/ServicesPage/FeatureCard";
 export default function Services() {
   return (
     <>
       <Navbar />
       <ServicesBanner/>
        
+       <FeatureCard/>
       <ServicesSection/>
 
       <PortfolioSection/>
