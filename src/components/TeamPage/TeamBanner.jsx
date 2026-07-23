@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
-import aboutImg from "../../assets/images/about-banner.jpg";
+import aboutImg from "../../assets/team/team-banner.jpg";
 
 export default function AboutBanner() {
   return (
-    <section className="bg-[#f4f4f4] py-16 lg:py-24 overflow-hidden">
+    <section className="bg-white py-16 lg:py-24 overflow-hidden">
       <div
         className="
           relative
-          max-w-[980px]
+          max-w-[900px]
           mx-auto
-          h-[850px]
+          h-[640px]
 
-          lg:h-[850px]
+          lg:h-[640px]
 
           max-lg:h-auto
           max-lg:flex
@@ -20,42 +20,41 @@ export default function AboutBanner() {
           px-5
           lg:px-0
         "
-      >
-        {/* Blue Background */}
+>
 
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: -120,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: false,
-            amount: 0.3,
-          }}
-          transition={{
-            duration: 0.8,
-          }}
-          className="
-            absolute
-            top-0
-            right-[32%]
+       {/* Blue Background */}
 
-            w-[65%]
-            h-[770px]
+<motion.div
+  initial={{
+    opacity: 0,
+    y: -120,
+  }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+  }}
+  viewport={{
+    once: false,
+    amount: 0.3,
+  }}
+  transition={{
+    duration: 0.8,
+  }}
+  className="
+    absolute
+    top-[13%]
+    left-[10%]
+    right-0
+    bottom-0
 
-            rounded-[22px]
-            bg-[#2e61d4]
+    rounded-t-[22px]
+    bg-[#2e61d4]
 
-            z-10
+    z-0
 
-            max-lg:hidden
-          "
-        />
-
+    max-lg:hidden
+  "
+/>
         {/* Image */}
 
         <motion.div
@@ -77,23 +76,23 @@ export default function AboutBanner() {
           }}
           className="
             absolute
-            top-[60px]
-            right-[22%]
+            top-0
+            left-0
 
-            w-[90%]
-            h-[646px]
+            w-[82%]
+            h-[88%]
 
             rounded-[22px]
             overflow-hidden
             shadow-2xl
 
-            z-20
+            z-10
 
             max-lg:relative
             max-lg:top-0
-            max-lg:right-0
+            max-lg:left-0
             max-lg:w-full
-            max-lg:h-[420px]
+            max-lg:h-[380px]
           "
         >
           <img
@@ -103,59 +102,61 @@ export default function AboutBanner() {
           />
         </motion.div>
 
-        {/* White Card */}
 
-        <motion.div
-          initial={{
-            opacity: 0,
-            x: 150,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-          }}
-          viewport={{
-            once: false,
-            amount: 0.3,
-          }}
-          transition={{
-            duration: 0.9,
-            delay: 0.4,
-          }}
-          className="
-            absolute
 
-            top-[45%]
-            left-[50%]
+    
+{/* White Card */}
 
-            w-[60%]
+<motion.div
+  initial={{
+    opacity: 0,
+    x: 150,
+  }}
+  whileInView={{
+    opacity: 1,
+    x: 0,
+  }}
+  viewport={{
+    once: false,
+    amount: 0.3,
+  }}
+  transition={{
+    duration: 0.9,
+    delay: 0.4,
+  }}
+  className="
+    absolute
 
-            bg-white
+    left-[27%]
+    right-[8%]
+    bottom-0
 
-            rounded-[22px]
+    bg-[#f5f5f5]
 
-            px-10
-            py-14
+    rounded-t-[22px]
 
-            shadow-xl
+    px-10
+    py-10
 
-            z-30
+    shadow-xl
 
-            max-lg:relative
-            max-lg:left-0
-            max-lg:top-[-40px]
-            max-lg:w-full
-            max-lg:px-7
-            max-lg:py-8
-          "
-        >
+    z-15
+
+    max-lg:relative
+    max-lg:left-0
+    max-lg:top-[-40px]
+    max-lg:w-full
+    max-lg:px-7
+    max-lg:py-8
+  "
+>
           {/* Heading */}
 
           <h2
             className="
               text-[34px]
               sm:text-[48px]
-              lg:text-[60px]
+              lg:text-[56px]
 
               leading-none
 
@@ -166,33 +167,14 @@ export default function AboutBanner() {
               text-black
             "
           >
-            About Us
+            Our Team
           </h2>
-
-          {/* Description */}
-
-          <p
-            className="
-              mt-8
-
-              text-[16px]
-
-              leading-8
-
-              text-[#555]
-            "
-          >
-            Massa ultricies mi quis hendrerit. Ac ut consequat semper
-            viverra nam. Libero id faucibus nisl tincidunt eget nullam non
-            nisi est. Arcu odio ut sem nulla. Amet tellus cras adipiscing
-            enim.
-          </p>
 
           {/* Source */}
 
           <p
             className="
-              mt-7
+              mt-6
 
               text-[15px]
 
@@ -204,38 +186,6 @@ export default function AboutBanner() {
               Freepik
             </span>
           </p>
-
-          {/* Button */}
-
-          <button
-            className="
-              mt-8
-
-              bg-[#2e61d4]
-
-              hover:bg-[#214fc0]
-
-              text-white
-
-              font-bold
-
-              tracking-[1px]
-
-              text-[14px]
-
-              px-10
-              py-5
-
-              rounded-md
-
-              transition-all
-              duration-300
-
-              hover:-translate-y-1
-            "
-          >
-            BOOK APPOINTMENT
-          </button>
         </motion.div>
       </div>
     </section>
