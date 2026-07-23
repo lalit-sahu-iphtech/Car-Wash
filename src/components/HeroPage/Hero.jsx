@@ -1,7 +1,6 @@
 import HeroCard from "./HeroCard";
 import heroImg from "../../assets/images/hero-page.jpg";
 
-
 export default function Hero() {
   return (
     <section
@@ -13,46 +12,57 @@ export default function Hero() {
         flex
         flex-col
         lg:flex-row
-        items-center
-        gap-10
-        lg:gap-8
 
-        pt-24
-        pb-16
+        items-start
+        gap-6
 
-        px-5
-        sm:px-6
-        lg:px-5
+        pt-10
+        pb-10
+
+        px-16
+        sm:px-10
+        lg:px-3
+        xl:ml-80
       "
     >
-      {/* Left: Text content */}
-      <div className="w-full lg:w-1/2">
+      {/* Left */}
+      <div className="w-full lg:w-1/2 sm : mt-10 lg:mt-25">
         <HeroCard />
       </div>
 
-      {/* Right: Image */}
-      <div className="w-full lg:w-1/2">
+      {/* Right */}
+      <div className="w-full lg:w-[70%] flex justify-start mt-3 sm:mt-5">
         <div
           className="
-            w-full
-            h-[320px]
-            sm:h-[420px]
-            lg:h-[560px]
+         
+             xl:ml-50
+            w-[90%]
+            max-w-[330px]
 
-            rounded-2xl
+            h-[220px]
+            sm:w-[92%]
+            sm:max-w-[380px]
+            sm:h-[360px]
+
+            md:max-w-[450px]
+            md:h-[340px]
+
+            lg:max-w-none
+            lg:w-[650px]
+            lg:h-[680px]
+
+            rounded-[22px]
             overflow-hidden
           "
         >
           <img
             src={heroImg}
-            alt="Car wash"
+            alt="Car Wash"
             className="w-full h-full object-cover"
           />
         </div>
-      </div>
-     <div>
-  
-     </div>
+</div>
+
     </section>
   );
 }
