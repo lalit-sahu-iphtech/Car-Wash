@@ -39,8 +39,8 @@ export default function CarWashServices() {
   );
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
-      <div className="max-w-[1140px] mx-auto px-5">
+    <section className="py-12 sm:py-16 lg:py-20 bg-white overflow-hidden">
+      <div className="max-w-[1140px] mx-auto px-4 sm:px-5">
 
         {/* Heading */}
 
@@ -51,12 +51,14 @@ export default function CarWashServices() {
           viewport={{ once: false }}
           className="
           text-center
-          text-[34px]
-          sm:text-[48px]
+          text-[26px]
+          sm:text-[38px]
           lg:text-[60px]
           font-bold
           tracking-[-1px]
-          mb-14
+          mb-8
+          sm:mb-10
+          lg:mb-14
         "
         >
           Car Wash Services
@@ -64,18 +66,26 @@ export default function CarWashServices() {
 
         {/* Tabs */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3">
 
           {servicesData.map((item) => (
             <button
               key={item.id}
               onClick={() => setActiveTab(item.id)}
               className={`
-                rounded-t-xl
-                py-5
-                px-4
-                text-[16px]
+                rounded-xl
+                lg:rounded-t-xl
+                lg:rounded-b-none
+                py-3
+                sm:py-4
+                lg:py-5
+                px-3
+                sm:px-4
+                text-[13px]
+                sm:text-[15px]
+                lg:text-[16px]
                 font-semibold
+                leading-snug
                 transition-all
                 duration-300
 
@@ -101,36 +111,51 @@ export default function CarWashServices() {
           animate="show"
           className="
           bg-[#f4f4f4]
-          rounded-b-2xl
-          px-8
-          py-10
+          rounded-2xl
+          lg:rounded-b-2xl
+          lg:rounded-t-none
+          mt-3
+          lg:mt-0
+          px-5
+          sm:px-6
+          lg:px-8
+          py-6
+          sm:py-8
+          lg:py-10
           shadow-sm
         "
         >
           <p
             className="
-            text-[16px]
-            leading-8
+            text-[14px]
+            sm:text-[15px]
+            lg:text-[16px]
+            leading-6
+            sm:leading-7
+            lg:leading-8
             text-[#555]
           "
           >
             {current.description}
           </p>
 
-          <ul className="mt-8 space-y-4">
+          <ul className="mt-5 sm:mt-6 lg:mt-8 space-y-3 sm:space-y-4">
 
             {current.points.map((item) => (
               <li
                 key={item}
                 className="
                 flex
-                items-center
+                items-start
+                sm:items-center
                 gap-3
-                text-[16px]
+                text-[14px]
+                sm:text-[15px]
+                lg:text-[16px]
                 font-medium
               "
               >
-                <FaCheck className="text-black text-[13px]" />
+                <FaCheck className="text-black text-[12px] sm:text-[13px] mt-1 sm:mt-0 shrink-0" />
 
                 {item}
               </li>

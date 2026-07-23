@@ -78,7 +78,7 @@ export default function ProcessCard({
         />
       </div>
 
-      <h3
+      <h4
         className="
         text-white
         font-bold
@@ -88,7 +88,7 @@ export default function ProcessCard({
       "
       >
         {index + 1}. {title}
-      </h3>
+      </h4>
 
       <p
         className="

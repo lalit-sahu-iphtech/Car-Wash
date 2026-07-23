@@ -3,7 +3,7 @@ import faqBgImage from "../../assets/faq/faqImg.jpg";
 
 export default function FaqBanner() {
   return (
-    <section className="relative overflow-hidden bg-white py-20 lg:py-24">
+    <section className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24">
       <div
         className="
           relative
@@ -11,6 +11,10 @@ export default function FaqBanner() {
           max-w-[1100px]
           px-5
           lg:px-0
+
+          pb-14
+          sm:pb-10
+          lg:pb-0
         "
       >
         {/* Blue Background */}
@@ -34,14 +38,20 @@ export default function FaqBanner() {
           className="
             absolute
             left-1/2
-            top-[18%]
+            top-[8%]
+            sm:top-[12%]
+            lg:top-[18%]
             -translate-x-1/2
 
-            hidden
-            lg:block
+            block
 
-            h-[390px]
-            w-[65%]
+            h-[220px]
+            sm:h-[320px]
+            lg:h-[390px]
+
+            w-[85%]
+            sm:w-[75%]
+            lg:w-[65%]
 
             rounded-[18px]
             bg-[#3569e8]
@@ -77,7 +87,7 @@ export default function FaqBanner() {
 
             shadow-xl
 
-            h-[300px]
+            h-[260px]
             sm:h-[420px]
             lg:h-[680px]
           "
@@ -91,92 +101,105 @@ export default function FaqBanner() {
               object-cover
             "
           />
+        </motion.div>
 
-          {/* White Card */}
+        {/* White Card */}
 
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 100,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{
-              once: false,
-              amount: 0.3,
-            }}
-            transition={{
-              delay: 0.35,
-              duration: 0.7,
-            }}
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: false,
+            amount: 0.3,
+          }}
+          transition={{
+            delay: 0.35,
+            duration: 0.7,
+          }}
+          className="
+            relative
+            z-30
+
+            -mt-14
+            sm:-mt-12
+            lg:absolute
+
+            lg:left-1/2
+            lg:bottom-[-40px]
+            lg:-translate-x-1/2
+            lg:mt-0
+
+            mx-auto
+
+            w-[92%]
+            sm:w-[85%]
+            lg:w-[80%]
+
+            rounded-[18px]
+
+            bg-white
+
+            px-5
+            py-6
+
+            sm:px-8
+            sm:py-8
+
+            lg:px-12
+            lg:py-10
+
+            shadow-xl
+          "
+        >
+          <h1
             className="
-              absolute
+              text-center
 
-              left-1/2
-              bottom-[-40px]
-              -translate-x-1/2
+              text-[32px]
+              sm:text-[50px]
+              lg:text-[90px]
 
-              w-[92%]
-              sm:w-[85%]
-              lg:w-[80%]
+              font-bold
 
-              rounded-[18px]
+              leading-none
 
-              bg-white
-
-              px-6
-              py-7
-
-              lg:px-12
-              lg:py-10
-
-              shadow-xl
+              text-black
             "
           >
-            <h1
+            FAQ
+          </h1>
+
+          <p
+            className="
+              mt-3
+              sm:mt-5
+
+              text-center
+
+              text-[13px]
+              sm:text-[15px]
+              lg:text-[18px]
+
+              text-[#666]
+            "
+          >
+            Image from{" "}
+            <span
               className="
-                text-center
-
-                text-[42px]
-                sm:text-[60px]
-                lg:text-[90px]
-
-                font-bold
-
-                leading-none
-
+                cursor-pointer
+                underline
                 text-black
               "
             >
-              FAQ
-            </h1>
-
-            <p
-              className="
-                mt-5
-
-                text-center
-
-                text-[15px]
-                lg:text-[18px]
-
-                text-[#666]
-              "
-            >
-              Image from{" "}
-              <span
-                className="
-                  cursor-pointer
-                  underline
-                  text-black
-                "
-              >
-                Freepik
-              </span>
-            </p>
-          </motion.div>
+              Freepik
+            </span>
+          </p>
         </motion.div>
       </div>
     </section>

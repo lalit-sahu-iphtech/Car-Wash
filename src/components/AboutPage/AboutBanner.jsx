@@ -16,6 +16,7 @@ export default function AboutBanner() {
           max-lg:h-auto
           max-lg:flex
           max-lg:flex-col
+          max-lg:pt-0
 
           px-5
           lg:px-0
@@ -52,7 +53,45 @@ export default function AboutBanner() {
 
             z-10
 
+            lg:block
             max-lg:hidden
+          "
+        />
+
+        {/* Blue Peek (mobile only) */}
+
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: -40,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: false,
+            amount: 0.3,
+          }}
+          transition={{
+            duration: 0.7,
+          }}
+          className="
+            hidden
+
+            max-lg:block
+            max-lg:absolute
+            max-lg:top-0
+            max-lg:left-1/2
+            max-lg:-translate-x-1/2
+
+            max-lg:w-[46%]
+            max-lg:h-[260px]
+
+            max-lg:rounded-[18px]
+            max-lg:bg-[#2e61d4]
+
+            max-lg:z-0
           "
         />
 
@@ -92,8 +131,11 @@ export default function AboutBanner() {
             max-lg:relative
             max-lg:top-0
             max-lg:right-0
+            max-lg:mt-[26px]
             max-lg:w-full
-            max-lg:h-[420px]
+            max-lg:h-[280px]
+            max-lg:mx-auto
+            max-lg:z-10
           "
         >
           <img
@@ -143,10 +185,14 @@ export default function AboutBanner() {
 
             max-lg:relative
             max-lg:left-0
-            max-lg:top-[-40px]
-            max-lg:w-full
+            max-lg:top-0
+            max-lg:-mt-20
+            max-lg:w-[92%]
+            max-lg:mx-auto
+            max-lg:rounded-[22px]
             max-lg:px-7
             max-lg:py-8
+            max-lg:z-20
           "
         >
           {/* Heading */}
@@ -175,9 +221,15 @@ export default function AboutBanner() {
             className="
               mt-8
 
+              max-lg:mt-4
+
               text-[16px]
 
+              max-lg:text-[14px]
+
               leading-8
+
+              max-lg:leading-6
 
               text-[#555]
             "
@@ -194,7 +246,11 @@ export default function AboutBanner() {
             className="
               mt-7
 
+              max-lg:mt-4
+
               text-[15px]
+
+              max-lg:text-[13px]
 
               text-[#777]
             "
@@ -210,6 +266,12 @@ export default function AboutBanner() {
           <button
             className="
               mt-8
+
+              max-lg:mt-6
+              max-lg:w-full
+              max-lg:px-6
+              max-lg:py-4
+              max-lg:text-[13px]
 
               bg-[#2e61d4]
 

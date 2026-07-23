@@ -40,7 +40,7 @@ export default function PricingImage() {
 
                 alt="pricing"
 
-                className="rounded-[28px] w-full h-[650px] object-cover"
+                className="rounded-[20px] sm:rounded-[28px] w-full h-[260px] sm:h-[420px] lg:h-[650px] object-cover"
 
             />
 

@@ -59,7 +59,7 @@ export default function ServicesCard({
       <div className="flex flex-col items-center text-center pb-8">
 
         {/* Title */}
-        <h3
+        <h5
           className="
             mt-[21px]
             mx-[21px]
@@ -72,7 +72,7 @@ export default function ServicesCard({
           "
         >
           {title}
-        </h3>
+        </h5>
 
         {/* Price */}
         <h4

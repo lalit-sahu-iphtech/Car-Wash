@@ -73,23 +73,23 @@ export default function WhyChooseUs() {
         >
           <motion.h2
             variants={heading}
-            className="text-center text-[34px] sm:text-[48px] lg:text-[60px] font-bold tracking-[-1px] text-black"
+            className="text-center text-[34px] sm:text-[48px] lg:text-[60px] font-bold tracking-[3px] text-black"
           >
             Why Clients Choose Us?
           </motion.h2>
 
-          <div className="grid lg:grid-cols-2 gap-12 mt-16">
+          <div className="grid lg:grid-cols-2 gap-6 mt-12">
 
             <motion.div variants={slide}>
               <h3 className="text-[22px] font-semibold mb-5">
                 The Best Car Wash
               </h3>
 
-              <ul className="space-y-3">
+              <ul>
                 {leftList.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 text-[15px] leading-7 text-[#555]"
+                    className="flex items-start gap-3 text-[14px] leading-7 text-[#555]"
                   >
                     <FaCheck className="text-[#e06d53] mt-1 text-sm" />
                     {item}
@@ -103,11 +103,11 @@ export default function WhyChooseUs() {
                 What We Do Our Services
               </h3>
 
-              <ul className="space-y-3">
+              <ul>
                 {rightList.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 text-[15px] leading-7 text-[#555]"
+                    className="flex items-start gap-3 text-[14px] leading-7 text-[#555]"
                   >
                     <FaCheck className="text-[#e06d53] mt-1 text-sm" />
                     {item}

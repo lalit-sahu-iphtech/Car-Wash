@@ -147,7 +147,7 @@ export default function BestServicesSection() {
 
               text-[28px]
               sm:text-[34px]
-              lg:text-[40px]
+              lg:text-[35px]
 
               font-bold
 
@@ -158,7 +158,7 @@ export default function BestServicesSection() {
           >
             Call for book:
             <span className="text-[#2b60de]">
-              {" "}
+              
               8-800-10-500
             </span>
           </motion.h3>

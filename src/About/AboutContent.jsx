@@ -58,12 +58,12 @@ export default function AboutContent() {
       className="lg:-translate-y-8"
     >
       {/* Heading */}
-      <motion.h2
+      <motion.h3
         variants={scaleY}
-        className="max-w-[500px] text-[28px] sm:text-[36px] lg:text-[37px] leading-[1.25] font-bold text-[#1a1a1a]"
+        className="max-w-[500px] text-[28px] sm:text-[36px] lg:text-[37px] leading-[1.25] font-bold text-[#111]"
       >
         Professional washing and cleaning of your car
-      </motion.h2>
+      </motion.h3>
 
       {/* Paragraph */}
       <motion.p
@@ -96,7 +96,7 @@ export default function AboutContent() {
       {/* Bottom Heading */}
       <motion.h3
         variants={scaleX}
-        className="text-[18px] sm:text-[22px] font-bold mt-6 sm:mt-8 text-[#1a1a1a]"
+        className="text-[18px] sm:text-[22px] font-bold mt-6 sm:mt-8 text-[#111]"
       >
         Call for book:
         <span className="text-[#3d63d8]"> 8-800-10-500</span>

@@ -7,79 +7,110 @@ export default function HeroCard() {
       initial={{ x: -80, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{
+        duration: 1,
         delay: 0.2,
-        duration: 1.1,
-        type: "tween",
-        ease: [0.22, 1, 0.36, 1],
       }}
-      className="w-full max-w-[500px]"
+      className="
+      w-full
+      max-w-[470px]
+  
+      pl-6
+      sm:pl-8
+      lg:pl-10
+      lg:mt-10
+  
+      pt-4
+      sm:pt-4
+      lg:pt-1
+  "
     >
       {/* Welcome */}
-      <p className="text-[15px] sm:text-[16px] tracking-[4px] uppercase text-[#111111] mb-4">
+      <p
+        className="
+          uppercase
+          tracking-[4px]
+          text-[11px]
+          sm:text-[15px]
+          lg:text-[17px]
+          mb-3
+        "
+      >
         Welcome To
       </p>
 
       {/* Heading */}
-      <h1 className="text-[44px] sm:text-[56px] lg:text-[64px] leading-none font-bold mb-6">
+      <h1
+        className="
+          text-[48px]
+          sm:text-[56px]
+          lg:text-[57px]
+          leading-none
+          font-bold
+          mb-6
+        "
+      >
         Car Wash
-      </h1>
+</h1>
 
-      {/* Address / Contact */}
-      <div className="space-y-4 lg:space-y-5 mb-8">
-        <div className="flex items-center gap-3">
-          <FaMapMarkerAlt className="text-[18px] shrink-0" />
-          <span className="text-[15px] sm:text-[16px] leading-6 tracking-[1px]">
+      {/* Address */}
+      <div className="space-y-4 mb-8">
+
+        <div className="flex items-start gap-5">
+          <FaMapMarkerAlt className="mt-1 text-[15px]" />
+
+          <p className="text-[18px] leading-6 font-semibold uppercase whitespace-nowrap">
             254 W 27ST ST, NEW YORK, NY 10011
-          </span>
+          </p>
         </div>
 
         <div className="flex items-center gap-3">
-          <FaMobileAlt className="text-[18px] shrink-0" />
-          <span className="text-[15px] sm:text-[16px] font-semibold">
+          <FaMobileAlt className="text-[15px]" />
+
+          <p className="text-[18px] font-semibold whitespace-nowrap">
             (212) 123-4567
-          </span>
+          </p>
         </div>
 
-        <div className="flex items-center gap-3">
-          <FaMapMarkerAlt className="text-[18px] shrink-0" />
-          <span className="text-[15px] sm:text-[16px] leading-6 tracking-[1px]">
+        <div className="flex items-start gap-3">
+          <FaMapMarkerAlt className="mt-1 text-[13px]" />
+
+          <p className="text-[18px] leading-6 font-semibold uppercase whitespace-nowrap">
             341 W 11ST ST, NEW YORK, NY 10022
-          </span>
+          </p>
         </div>
 
-        <div className="flex items-center gap-3">
-          <FaMobileAlt className="text-[18px] shrink-0" />
-          <span className="text-[15px] sm:text-[16px] font-semibold">
+        <div className="flex items-center gap-5">
+          <FaMobileAlt className="text-[15px]" />
+
+          <p className="text-[18px] font-semibold">
             (212) 123-4567
-          </span>
+          </p>
         </div>
       </div>
 
       {/* Button */}
+
       <button
         className="
-          w-full
-          max-w-[220px]
-          h-[52px]
-          lg:h-[56px]
-
+          mt-5
+          w-[240px]
+          h-[50px]
+          text-[12px]
           rounded-md
           bg-[#2e61d4]
           text-white
-          text-[14px]
-          font-bold
           uppercase
-          tracking-wide
-          transition-all
-          duration-300
-          hover:bg-white
-          hover:text-[#2e61d4]
-          border-2
-          border-[#2e61d4]
+          text-[11px]
+          tracking-[2px]
+          font-bold
+           
+         
+        
+
         "
       >
-        Book Appointment
-      </button>
+  Book Appointment
+</button>
     </motion.div>
   );
 }

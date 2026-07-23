@@ -3,12 +3,12 @@ import Navbar from "../components/Navbar/Navbar";
 import FooterSection from "../components/Footer/FooterSection"; 
 import MapSection from "../components/Map/MapSection"; 
 import ContactSection from "../components/Contact/ContactSection";
- import PricingPlan from "../components/Pricing/PricingPlan"; 
+import PricingPlanSection from "../components/Pricing/PricingPlanSection";
 export default function Pricing(){ 
     return(
          <> <Navbar/>
           <PricingSection/> 
-          <PricingPlan/> 
+          <PricingPlanSection/> 
           <ContactSection/> 
           <MapSection/>
           <FooterSection/> 

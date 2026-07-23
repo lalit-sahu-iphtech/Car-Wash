@@ -13,7 +13,7 @@ export const pageLinks = [
   },
   {
     name: "Pricing",
-    link: "pricing",
+    link: "/pricing",
   },
   {
     name: "Services",

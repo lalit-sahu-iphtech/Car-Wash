@@ -29,21 +29,21 @@ export default function PricingCard(){
                 type:"spring"
             }}
 
-            className="relative z-20 -mt-[140px]"
+            className="relative z-20 -mt-[50px] sm:-mt-[90px] lg:-mt-[140px] px-5"
 
         >
 
             <div className="max-w-[850px] mx-auto">
 
-                <div className="bg-white rounded-[28px] shadow-2xl py-16 px-12 text-center">
+                <div className="bg-white rounded-[20px] sm:rounded-[28px] shadow-2xl py-8 px-6 sm:py-12 sm:px-10 lg:py-16 lg:px-12 text-center">
 
-                    <h2 className="text-[70px] font-extrabold">
+                    <h2 className="text-[36px] sm:text-[50px] lg:text-[70px] font-extrabold leading-tight">
 
                         Pricing
 
                     </h2>
 
-                    <p className="mt-8 text-2xl">
+                    <p className="mt-4 sm:mt-6 lg:mt-8 text-[15px] sm:text-lg lg:text-2xl">
 
                         Image from
 
