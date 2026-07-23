@@ -58,7 +58,7 @@ export default function HeroCard() {
         <div className="flex items-start gap-5">
           <FaMapMarkerAlt className="mt-1 text-[15px]" />
 
-          <p className="text-[18px] leading-6 font-semibold uppercase whitespace-nowrap">
+          <p className="text-[18px] leading-6 font-semibold uppercase lg:whitespace-nowrap">
             254 W 27ST ST, NEW YORK, NY 10011
           </p>
         </div>
@@ -66,7 +66,7 @@ export default function HeroCard() {
         <div className="flex items-center gap-3">
           <FaMobileAlt className="text-[15px]" />
 
-          <p className="text-[18px] font-semibold whitespace-nowrap">
+          <p className="text-[18px] font-semibold lg:not-even:whitespace-nowrap">
             (212) 123-4567
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function HeroCard() {
         <div className="flex items-start gap-3">
           <FaMapMarkerAlt className="mt-1 text-[13px]" />
 
-          <p className="text-[18px] leading-6 font-semibold uppercase whitespace-nowrap">
+          <p className="text-[18px] leading-6 font-semibold uppercase lg:whitespace-nowrap">
             341 W 11ST ST, NEW YORK, NY 10022
           </p>
         </div>
