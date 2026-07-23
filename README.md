@@ -1,16 +1,210 @@
-# React + Vite
+# Car Wash Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive Car Wash website built using **React.js**, **Vite**, **Tailwind CSS**, and **Framer Motion**. The project is designed to provide a modern UI with smooth animations and responsive layouts for desktop, tablet, and mobile devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tech Stack
 
-## React Compiler
+- React.js
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router DOM
+- React Icons
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```
+src
+│
+├── assets/
+│   ├── images/
+│   └── icons/
+│
+├── components/
+│   ├── Navbar/
+│   ├── Hero/
+│   ├── Features/
+│   ├── About/
+│   ├── Services/
+│   ├── Pricing/
+│   ├── Team/
+│   ├── Portfolio/
+│   ├── FAQ/
+│   ├── Contact/
+│   ├── Map/
+│   ├── Footer/
+│   ├── HeroPage/
+│   ├── AboutPage/
+│   ├── ServicesPage/
+│   ├── TeamPage/
+│   ├── ContactPage/
+│   └── FaqPage/
+│
+├── data/
+├── hooks/
+├── pages/
+├── styles/
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## ✨ Features
+
+- Fully Responsive Design
+- Modern User Interface
+- Smooth Scroll Navigation
+- React Router Based Navigation
+- Animated Sections
+- Responsive Hero Banner
+- Feature Section
+- About Section
+- Services Section
+- Pricing Section
+- Team Section
+- Portfolio Section
+- FAQ Section
+- Contact Section
+- Google Map Section
+- Footer
+- Mobile Navigation Menu
+
+---
+
+## 📄 Pages
+
+- Home
+- About
+- Services
+- Pricing
+- Team
+- FAQ
+- Contact
+
+---
+
+## 📱 Responsive
+
+The website is optimized for:
+
+- Mobile Devices
+- Tablets
+- Laptops
+- Large Desktop Screens
+
+---
+
+## 📦 Installation
+
+Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+Go to project folder
+
+```bash
+cd car-wash
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📚 Dependencies
+
+```json
+{
+  "react": "^19.x",
+  "react-dom": "^19.x",
+  "react-router-dom": "^7.x",
+  "framer-motion": "^12.x",
+  "react-icons": "^5.x",
+  "tailwindcss": "^4.x",
+  "vite": "^7.x"
+}
+```
+
+---
+
+## 📁 Main Components
+
+- Navbar
+- Hero
+- Features
+- About
+- Services
+- Pricing
+- Team
+- Portfolio
+- FAQ
+- Contact
+- Map
+- Footer
+
+---
+
+## 🎨 Styling
+
+- Tailwind CSS Utility Classes
+- Custom CSS Animations
+- Responsive Layout
+- Framer Motion Animations
+
+---
+
+## 🛠️ Development
+
+Start Development Server
+
+```bash
+npm run dev
+```
+
+Build Project
+
+```bash
+npm run build
+```
+
+Preview Production
+
+```bash
+npm run preview
+```
+
+---
+
+## 📄 License
+
+This project is created for learning and practice purposes.
