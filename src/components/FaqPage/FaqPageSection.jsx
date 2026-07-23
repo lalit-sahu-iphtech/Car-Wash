@@ -99,7 +99,6 @@ export default function FaqPageSection() {
               duration: 0.9,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="order-2 lg:order-1"
           >
             {faqItems.map((item, index) => (
               <div
@@ -136,9 +135,10 @@ export default function FaqPageSection() {
                     }`}
                   />
                 </button>
-                                {/* Answer */}
 
-                                <motion.div
+                {/* Answer */}
+
+                <motion.div
                   initial={false}
                   animate={{
                     height: openIndex === index ? "auto" : 0,
@@ -162,20 +162,6 @@ export default function FaqPageSection() {
                 </motion.div>
               </div>
             ))}
-
-            <p
-              className="
-                mt-10
-                text-center
-                text-[17px]
-                text-[#666]
-              "
-            >
-              Image from{" "}
-              <span className="cursor-pointer underline text-black">
-                {faqContent.imageCredit}
-              </span>
-            </p>
           </motion.div>
 
           {/* Image */}
@@ -197,13 +183,11 @@ export default function FaqPageSection() {
               duration: 0.9,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="
-              order-1
-              lg:order-2
-            "
+            className="relative"
           >
             <div
               className="
+                relative
                 overflow-hidden
                 rounded-[20px]
                 shadow-xl
@@ -221,6 +205,27 @@ export default function FaqPageSection() {
                   object-cover
                 "
               />
+
+              {/* Image Credit Overlay */}
+
+              <p
+                className="
+                  absolute
+                  bottom-5
+                  left-1/2
+                  -translate-x-1/2
+
+                  text-[14px]
+                  text-white
+
+                  drop-shadow-md
+                "
+              >
+                Image from{" "}
+                <span className="cursor-pointer underline text-white">
+                  {faqContent.imageCredit}
+                </span>
+              </p>
             </div>
           </motion.div>
 
