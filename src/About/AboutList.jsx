@@ -4,9 +4,9 @@ import { FaCheck } from "react-icons/fa";
 export default function AboutList({ title, items }) {
   return (
     <div className="min-w-0">
-      <h3 className="text-[17px] sm:text-[18px] font-bold mb-4 sm:mb-5 text-[#1a1a1a]">
+      <h5 className="text-[17px] sm:text-[18px] font-bold mb-4 sm:mb-5 text-[#1a1a1a]">
         {title}
-      </h3>
+      </h5>
 
       <div className="space-y-2">
         {items.map((item) => (
