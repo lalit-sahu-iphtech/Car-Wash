@@ -59,11 +59,19 @@ export default function AboutContent() {
     >
       {/* Heading */}
       <motion.h3
-        variants={scaleY}
-        className="max-w-[500px] text-[28px] sm:text-[36px] lg:text-[37px] leading-[1.25] font-bold text-[#111]"
-      >
-        Professional washing and cleaning of your car
-      </motion.h3>
+          variants={scaleY}
+          className="
+            max-w-[550px]
+            text-[28px]
+            sm:text-[36px]
+            lg:text-[48px]
+            leading-[1.2]
+            font-medium
+            text-[#111]
+          "
+        >
+  Professional washing and cleaning of your car
+</motion.h3>
 
       {/* Paragraph */}
       <motion.p
@@ -96,10 +104,15 @@ export default function AboutContent() {
       {/* Bottom Heading */}
       <motion.h3
         variants={scaleX}
-        className="text-[18px] sm:text-[22px] font-bold mt-6 sm:mt-8 text-[#111]"
+        className="text-[28px]
+        sm:text-[36px]
+        lg:text-[36px]
+        leading-[1.2]
+        font-medium
+        mt-6 sm:mt-8 text-[#111]"
       >
         Call for book:
-        <span className="text-[#3d63d8]"> 8-800-10-500</span>
+        <span className="text-[#3d63d8] "> 8-800-10-500</span>
       </motion.h3>
     </motion.div>
   );
