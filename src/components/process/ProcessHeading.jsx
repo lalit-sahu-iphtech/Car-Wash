@@ -22,16 +22,14 @@ export default function ProcessHeading() {
   className="text-center"
 >
 <h2
-        className="
-        text-white
-        font-normal
-        leading-tight
-        text-[46px]
-        sm:text-[56px]
-        sm:font-normal
-        lg:text-[72px]
-        lg:font-bold
-      "
+       className="
+       text-white
+       font-medium
+       leading-[1.1]
+       text-[46px]
+       sm:text-[56px]
+       lg:text-[65px]
+     "
       >
         Our Process
       </h2>
