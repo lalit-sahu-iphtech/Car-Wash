@@ -27,6 +27,7 @@ export default function ServicesCard({
         ease: [0.22, 1, 0.36, 1],
       }}
       className="
+         w-full
         bg-white
         rounded-[20px]
         overflow-hidden
