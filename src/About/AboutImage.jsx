@@ -24,7 +24,7 @@ export default function AboutImage() {
         duration: 1,
         ease: "easeOut",
       }}
-      className="flex justify-center lg:justify-end w-full max-w-full lg:-translate-x-10 "
+      className="flex justify-center lg:justify-end w-full max-w-full lg:translate-x-5 "
     >
       <img
         src={aboutImg}
@@ -37,11 +37,13 @@ export default function AboutImage() {
         sm:max-w-[420px]
         sm:h-[500px]
         lg:max-w-[450px]
-        lg:h-[670px]
+        lg:h-[600px]
         object-cover
         object-top
         sm:object-center
         shadow-sm
+        
+        
       "
       />
     </motion.div>
