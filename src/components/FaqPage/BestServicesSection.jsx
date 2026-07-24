@@ -79,12 +79,12 @@ export default function BestServicesSection() {
             }}
             className="
               text-[34px]
-              font-bold
-              leading-tight
+              font-medium
+              leading-[1]
 
-              sm:text-[42px]
+              sm:text-[40px]
 
-              lg:text-[50px]
+              lg:text-[48px]
             "
           >
             Our Best Services You
@@ -149,7 +149,7 @@ export default function BestServicesSection() {
               sm:text-[34px]
               lg:text-[35px]
 
-              font-bold
+              font-bold 
 
               leading-tight
 

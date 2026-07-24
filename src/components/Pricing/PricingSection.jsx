@@ -1,9 +1,22 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import PricingImage from "./PricingImage";
 import PricingCard from "./PricingCard";
 
-
 export default function PricingSection() {
+  const [showCard, setShowCard] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowCard(window.scrollY > 100); // is value ko 50/80/120 se adjust kar sakte ho
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section className="relative overflow-hidden">
       {/* Background */}
@@ -19,7 +32,7 @@ export default function PricingSection() {
 
       <div className="relative z-10 pt-10 sm:pt-16 lg:pt-20 pb-16 sm:pb-24 lg:pb-32">
         <PricingImage />
-        <PricingCard/>
+        <PricingCard showCard={showCard} />
       </div>
     </section>
   );

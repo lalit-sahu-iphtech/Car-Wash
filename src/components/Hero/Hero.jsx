@@ -35,6 +35,8 @@ export default function Hero() {
 
           flex
           items-center
+          justify-start
+          
 
           h-full
           pt-24
@@ -42,7 +44,8 @@ export default function Hero() {
 
           px-5
           sm:px-6
-          lg:px-5
+          lg:px-6
+          xl:px-6
 
           lg:-translate-y-32
         "

@@ -1,7 +1,23 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import faqBgImage from "../../assets/faq/faqImg.jpg";
 
 export default function FaqBanner() {
+  const [showCard, setShowCard] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowCard(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial check
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24">
       <div
@@ -18,7 +34,6 @@ export default function FaqBanner() {
         "
       >
         {/* Blue Background */}
-
         <motion.div
           initial={{
             opacity: 0,
@@ -61,7 +76,6 @@ export default function FaqBanner() {
         />
 
         {/* Image */}
-
         <motion.div
           initial={{
             opacity: 0,
@@ -104,24 +118,17 @@ export default function FaqBanner() {
         </motion.div>
 
         {/* White Card */}
-
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 100,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: false,
-            amount: 0.3,
-          }}
-          transition={{
-            delay: 0.35,
-            duration: 0.7,
-          }}
+        initial={{ opacity: 0, y: 100 }}
+        animate={{
+          opacity: showCard ? 1 : 0,
+          y: showCard ? 0 : 100,
+        }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+        }}
+
           className="
             relative
             z-30
@@ -154,7 +161,7 @@ export default function FaqBanner() {
             lg:px-12
             lg:py-10
 
-            shadow-xl
+            
           "
         >
           <h1

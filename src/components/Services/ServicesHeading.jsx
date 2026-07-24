@@ -22,26 +22,26 @@ export default function ServicesHeading() {
       }}
       className="text-center"
     >
-      <h2
-        className="
-          text-[#111]
-          font-bold
-          leading-tight
+     <h2
+  className="
+    text-[#111]
+    font-medium
+    leading-[1.1]
 
-          text-[34px]
-          sm:text-[44px]
-          md:text-[52px]
-          lg:text-[60px]
+    text-[65px]
+    sm:text-[44px]
+    md:text-[52px]
+    lg:text-[65px]
 
-          max-w-[350px]
-          sm:max-w-[500px]
-          lg:max-w-none
+    max-w-[350px]
+    sm:max-w-[500px]
+    lg:max-w-none
 
-          mx-auto
-        "
-      >
-        Our Best Services You
-      </h2>
+    mx-auto
+  "
+>
+  Our Best Services You
+</h2>
     </motion.div>
   );
 }

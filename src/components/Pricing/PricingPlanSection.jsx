@@ -63,23 +63,23 @@ export default function PricingPlanSection() {
             transformOrigin: "top",
           }}
           className="
-            text-center
-            text-[28px]
-            sm:text-[42px]
-            lg:text-[70px]
-            font-extrabold
-            text-[#111]
-            mb-10
-            sm:mb-14
-            lg:mb-20
-          "
+          text-center
+          text-[28px]
+          sm:text-[42px]
+          lg:text-[65px]
+          font-medium
+          text-[#111]
+          mb-10
+          sm:mb-14
+          lg:mb-20
+        "
         >
           Our pricing plan
         </motion.h2>
 
         {/* Main Grid */}
 
-        <div className="grid lg:grid-cols-[1.25fr_.75fr] gap-10 sm:gap-12 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-[1fr_1fr] gap-10 sm:gap-12 lg:gap-8 items-start">
 
           {/* Left */}
 
@@ -110,8 +110,7 @@ export default function PricingPlanSection() {
                   md:grid-cols-[220px_1fr]
                   gap-6
                   sm:gap-10
-                  border-b
-                  border-gray-200
+                 
                   pb-8
                   sm:pb-12
                 "
@@ -119,7 +118,7 @@ export default function PricingPlanSection() {
 
                 {/* Left Content */}
 
-                <div >
+                {/* <div >
 
                   <h3
                     className="
@@ -186,11 +185,81 @@ export default function PricingPlanSection() {
                     PURCHASE NOW
                     </button>
 
-                </div>
+                </div> */}
+                {/* Left Content */}
+<div className="flex flex-col">
+
+<h3
+  className="
+    uppercase
+    text-[15px]
+    sm:text-[18px]
+    lg:text-[20px]
+    font-bold
+    leading-tight
+    text-[#222]
+  "
+>
+  {plan.title}
+</h3>
+
+<h2
+  className="
+    text-[#3565db]
+    text-[32px]
+    sm:text-[38px]
+    lg:text-[45px]
+    font-bold
+    mt-3
+    sm:mt-5
+    lg:mt-6
+  "
+>
+  {plan.price}
+</h2>
+
+<button
+  className="
+  self-end
+  -translate-x-45
+  sm:translate-x-60
+  lg:translate-x-65
+      mt-5
+      sm:mt-7
+      lg:mt-8
+      inline-flex
+      items-center
+      justify-center
+      whitespace-nowrap
+      px-6
+      sm:px-8
+      h-[50px]
+      sm:h-[56px]
+      lg:h-[60px]
+      border-2
+      border-[#3565db]
+      bg-[#3565db]
+      rounded-[10px]
+      text-white
+      text-[12px]
+      sm:text-[13px]
+      lg:text-[14px]
+      font-bold
+      uppercase
+      tracking-[2px]
+      hover:bg-white
+      hover:text-[#3565db]
+      transition-all
+  "
+  >
+  PURCHASE NOW
+  </button>
+
+</div>
 
                 {/* Features */}
 
-                <ul className="space-y-3 sm:space-y-4 mt-1 sm:mt-2">
+                <ul className="space-y-3 sm:space-y-4 mt-1 sm:mt-2 ">
 
                   {plan.features.map((item, i) => (
 
@@ -215,7 +284,7 @@ export default function PricingPlanSection() {
                   ))}
 
                 </ul>
-
+               
               </motion.div>
 
             ))}
@@ -271,7 +340,7 @@ export default function PricingPlanSection() {
                   w-full
                   h-[220px]
                   sm:h-[320px]
-                  lg:h-[520px]
+                  lg:h-[550px]
                   object-cover
                   rounded-[20px]
                 "
