@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { pageLinks } from "../../data/navLinks";
 
 export default function MobileMenu() {
@@ -23,8 +24,7 @@ export default function MobileMenu() {
     <>
       {/* Menu Button */}
       <button
-         className="min-[940px]:hidden text-2xl mr-9 text-gray-600"
-
+        className="min-[940px]:hidden text-2xl mr-9 text-gray-600"
         onClick={() => setMenuOpen(true)}
       >
         <FaBars />
@@ -56,10 +56,18 @@ export default function MobileMenu() {
           {/* Menu */}
           <ul className="mt-10 space-y-6 text-2xl">
 
-            <li className="cursor-pointer hover:text-gray-300 transition">
-              Home
+            {/* Home */}
+            <li>
+              <Link
+                to="/home"
+                onClick={() => setMenuOpen(false)}
+                className="block hover:text-gray-300 transition"
+              >
+                Home
+              </Link>
             </li>
 
+            {/* Pages */}
             <li>
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -80,22 +88,29 @@ export default function MobileMenu() {
                 }`}
               >
                 <div className="border border-gray-500">
-                {pageLinks.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.link}
-                    onClick={() => setMenuOpen(false)}
-                    className="block px-5 py-3 text-xl hover:bg-white hover:text-black transition"
-                  >
-                    {item.name}
-                  </a>
-                ))}
+                  {pageLinks.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.link}
+                      onClick={() => setMenuOpen(false)}
+                      className="block px-5 py-3 text-xl hover:bg-white hover:text-black transition"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
                 </div>
               </div>
             </li>
 
-            <li className="cursor-pointer hover:text-gray-300 transition">
-              Contact Us
+            {/* Contact */}
+            <li>
+              <Link
+                to="/contact"
+                onClick={() => setMenuOpen(false)}
+                className="block hover:text-gray-300 transition"
+              >
+                Contact Us
+              </Link>
             </li>
 
           </ul>
