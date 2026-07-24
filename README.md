@@ -4,11 +4,6 @@ A modern and responsive **Car Wash Website** built using **React.js**, **Vite**,
 
 ---
 
-## 📸 Preview
-
-> Responsive Car Wash Website with modern UI and smooth animations.
-
----
 
 ## 🚀 Tech Stack
 
@@ -21,26 +16,7 @@ A modern and responsive **Car Wash Website** built using **React.js**, **Vite**,
 
 ---
 
-## ✨ Features
 
-- ✅ Fully Responsive Design
-- ✅ Modern User Interface
-- ✅ Smooth Scroll Navigation
-- ✅ React Router Navigation
-- ✅ Animated Sections
-- ✅ Hero Banner
-- ✅ About Section
-- ✅ Services Section
-- ✅ Pricing Section
-- ✅ Team Section
-- ✅ Portfolio Section
-- ✅ FAQ Section
-- ✅ Contact Section
-- ✅ Google Map Integration
-- ✅ Footer
-- ✅ Mobile Navigation Menu
-
----
 
 # 📂 Project Structure
 
@@ -95,16 +71,6 @@ src
 
 ---
 
-# 📱 Responsive Design
-
-The website is optimized for:
-
-- 📱 Mobile
-- 📱 Tablet
-- 💻 Laptop
-- 🖥️ Desktop
-
----
 
 # ⚙️ Prerequisites
 
@@ -114,23 +80,6 @@ Before running the project, make sure you have installed:
 - npm (comes with Node.js)
 - Git
 
-Check versions:
-
-```bash
-node -v
-```
-
-```bash
-npm -v
-```
-
-```bash
-git --version
-```
-
----
-
-# 📥 Clone the Repository
 
 Clone the project from GitHub:
 
@@ -140,15 +89,12 @@ git clone https://github.com/lalit-sahu-iphtech/Car-Wash.git
 
 ---
 
-# 📂 Navigate to the Project Folder
 
 ```bash
 cd Car-Wash
 ```
 
 ---
-
-# 📦 Install Dependencies
 
 Install all required packages:
 
@@ -158,15 +104,11 @@ npm install
 
 ---
 
-# ▶️ Run the Development Server
-
 Start the Vite development server:
 
 ```bash
 npm run dev
 ```
-
-After running the command, you'll see output similar to:
 
 ```text
 VITE v7.x.x
@@ -207,27 +149,6 @@ http://192.168.1.10:5173
 
 ---
 
-# 🏗️ Build for Production
-
-Create an optimized production build:
-
-```bash
-npm run build
-```
-
-The production files will be generated inside the **dist** folder.
-
----
-
-# 👀 Preview Production Build
-
-Run the production build locally:
-
-```bash
-npm run preview
-```
-
----
 
 # 📚 Dependencies
 
@@ -243,149 +164,7 @@ npm run preview
 }
 ```
 
----
-
-# 📁 Main Components
-
-- Navbar
-- Hero
-- Features
-- About
-- Services
-- Pricing
-- Team
-- Portfolio
-- FAQ
-- Contact
-- Map
-- Footer
-
----
-
-# 🎨 Styling
-
-- Tailwind CSS
-- Responsive Layout
-- Utility Classes
-- Custom CSS
-- Framer Motion Animations
-
----
-
-# 🛠️ Available Scripts
-
-### Install Packages
-
-```bash
-npm install
-```
-
-### Start Development Server
-
-```bash
-npm run dev
-```
-
-### Build Project
-
-```bash
-npm run build
-```
-
-### Preview Production Build
-
-```bash
-npm run preview
-```
-
----
-
-# 🤝 Contributing
-
-1. Fork the repository
-
-2. Clone your fork
-
-```bash
-git clone https://github.com/your-username/Car-Wash.git
-```
-
-3. Create a new branch
-
-```bash
-git checkout -b feature/your-feature-name
-```
-
-4. Make your changes
-
-5. Commit your changes
-
-```bash
-git add .
-git commit -m "Add new feature"
-```
-
-6. Push to GitHub
-
-```bash
-git push origin feature/your-feature-name
-```
-
-7. Create a Pull Request
-
----
-
-# 🐞 Troubleshooting
-
-### Delete node_modules and reinstall
-
-```bash
-rm -rf node_modules
-```
-
-Windows
-
-```bash
-rmdir /s node_modules
-```
-
-Install again
-
-```bash
-npm install
-```
-
----
-
-### Clear npm cache
-
-```bash
-npm cache clean --force
-```
-
----
-
-### Install dependencies again
-
-```bash
-npm install
-```
-
----
-
-# 👨‍💻 Author
-
-**Lalit Kumar Sahu**
-
-GitHub:
-https://github.com/lalit-sahu-iphtech
-
----
-
-# 📄 License
-
-This project is created for learning and practice purposes only.
 
 #img
 
-<img src="./ss1"/>
+<img src="./ss1.png"/>
