@@ -18,15 +18,15 @@ export default function HeroCard() {
         sm:max-w-[380px]
         md:max-w-[400px]
         lg:max-w-[420px]
-        xl:max-w-[440px]
-        2xl:max-w-[460px]
+        xl:max-w-[450px]
+        2xl:max-w-[480px]
 
         bg-white
         rounded-[30px]
         lg:mt-22
         p-5
         sm:p-5
-        lg:p-7
+        lg:p-6
 
         shadow-xl
         "
